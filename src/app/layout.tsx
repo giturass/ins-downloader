@@ -5,8 +5,6 @@ import { Toaster } from 'react-hot-toast';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import GithubCorner from '@/components/GithubCorner';
-
 import '@/assets/styles/globals.scss';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -22,7 +20,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         {children}
         <Toaster position="top-center" reverseOrder={false} />
-        <GithubCorner />
       </body>
     </html>
   );
